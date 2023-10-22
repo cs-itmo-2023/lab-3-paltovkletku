@@ -20,7 +20,7 @@
 
 Проверка доступа в Интернет:
 
-![ping_yandex](//home/anna/Изображения/Снимки экрана/Снимок экрана от 2023-10-22 12-29-53.png)
+![ping_yandex](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2012-29-53.png)
 
 Клонируем машину А, изменяем имя хоста на anna2 командой sudo hostnamectl set-hostname anna2. Машина Б создана.
 
