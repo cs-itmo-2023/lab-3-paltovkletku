@@ -20,7 +20,7 @@
 
 Проверка доступа в Интернет:
 
-![ping_yandex](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2012-29-53.png)
+![ping_yandex](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2012-29-53.png)
 
 Клонируем машину А, изменяем имя хоста на anna2 командой sudo hostnamectl set-hostname anna2. Машина Б создана.
 
@@ -42,19 +42,19 @@
 
 Для машины A: Вызываем команду sudo nano /etc/netplan/00-installer-config.yaml. В открывшемся файле конфигурации прописываем: 
 
-![netplan A](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-23-47.png)
+![netplan A](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-23-47.png)
 
 Применяем конфиг, прописав netplan apply. reboot, чтобы перезагрузить систему.
 
 Для машины Б: Вызываем команду sudo nano /etc/netplan/00-installer-config.yaml. В открывшемся файле конфигурации прописываем: 
 
-![netplan Б](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-47-35.png)
+![netplan Б](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-47-35.png)
 
 Применяем конфиг, прописав netplan apply. reboot, чтобы перезагрузить систему.
 
 Для машины В: Вызываем команду sudo nano /etc/netplan/00-installer-config.yaml. В открывшемся файле конфигурации прописываем: 
 
-![netplan В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-42-44.png)
+![netplan В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-42-44.png)
 
 Применяем конфиг, прописав netplan apply. reboot, чтобы перезагрузить систему.
 
@@ -63,17 +63,17 @@
 Проверка доступа:
 
 Ping из А в Б
-![access A to Б](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-51-42.png)
+![access A to Б](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-51-42.png)
 
 Ping из А в В
-![ping из А в В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-53-21.png)
+![ping из А в В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-53-21.png)
 
 Network is unreachable Б-В
-![network is unreachable Б-В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-56-42.png)
+![network is unreachable Б-В](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2022-56-42.png)
 
 3 терминала:
 
-![virtual machines](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2023-05-12.png)
+![virtual machines](https://github.com/cs-itmo-2023/lab-3-paltovkletku/blob/main/report/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-10-22%2023-05-12.png)
 
 ## Вывод
 
